@@ -94,9 +94,3 @@ print(str_literals[-2:], str_literals[:-3])
 print(str_literals[:2] + str_literals[2:])
 print(str_literals[289:8]+str_literals[2:239])	#graceful handling of out of range index
 print(len(str_literals))
-
-
-
-
-
-
