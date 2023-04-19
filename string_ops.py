@@ -1,4 +1,6 @@
 #string operations
+#Initial inputs from lpthw
+#Ref :	https://docs.python.org/3.11/tutorial/introduction.html
 
 print("Testing strings	:")
 print('I will now print this : "Quote\'s"', 2, 4, 5)
@@ -59,5 +61,42 @@ target_string = f"I can afford a {car} or a {bike} not exceeding {budget} lakhs.
 print(target_string)
 #split and extract item at index
 print(target_string.split()[10])
+
+#Ref :	https://docs.python.org/3.11/tutorial/introduction.html
+print("\n")
+multi_string = """\
+This is s multi line string, 
+		To test out the standard behaviour,
+			\rand some playing around too.\
+"""
+print(multi_string)
+temp = "xRx	"
+print(temp * 12)
+print("Auto" "-" "Concatenation" " happens" " like" " this" " but" " only" " with" " literals" ".")
+str_literals = "literals"
+str_variables = "variables"
+print("Use '+' for concatenating " + str_literals + " with " + str_variables + " or " + str_variables + " with " + str_variables + '.')
+
+#string indexing/subscripting :	there is no 'char', just s string with length 1
+print("String indexing using positive and negative indices : ")
+#positive :	left to right
+print(str_literals[0], str_literals[1], str_literals[2], str_literals[3], str_literals[4], str_literals[5], str_literals[6], str_literals[7])
+#negative :	right to left -1 being the last, -2 second last and so on
+print(str_literals[0], str_literals[-7], str_literals[-6], str_literals[-5], str_literals[-4], str_literals[-3], str_literals[-2], str_literals[-1])
+
+#substring using slicing : [from_index(included):to_Index(excluded)]
+print("Extracting substrings from : ", str_literals[0:8])	#8 since the last index is excluded
+print(str_literals[0:3])
+#default values are 0 for the first index and size of the string for the second index
+print(str_literals[:4], str_literals[2:])
+print(str_literals[-2:], str_literals[:-3])
+#interesting : The default values make sure that str_literals[:i] + str_literals[i:] is always equal to str_literals:
+print(str_literals[:2] + str_literals[2:])
+print(str_literals[289:8]+str_literals[2:239])	#graceful handling of out of range index
+print(len(str_literals))
+
+
+
+
 
 

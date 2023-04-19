@@ -18,6 +18,8 @@ print("floor div	:	", 100/3*4, 100//3*4)
 print("div mult mod	:	", 100/3*4*10%4)
 print("div mult mod	:	", int(100/3*4*10%4))
 #print("Tests	:	", 100 + 5 * 3, 100//3)
-
 print("div mult mod	:	", 100 + 20 - 10 + 100/3*4*10%4)
 
+print("\nPower of 2 :",2**2, 2**3, 2**4, 2**5, 2**6, 2**7, 2**8, 2**9, 2**10, 2**11, 2**12, 2**13, 2**14, 2**15, 2**16) #power f operator
+power_string = "Poweful powers of 2 :\n{}\n{}\n{}\n{}\n{}\n{}\n{}".format(2**4, 2**8, 2**16, 2**32, 2**64, 2**128, 2**256)
+print(power_string)
