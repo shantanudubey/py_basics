@@ -14,6 +14,17 @@ Modulus :
 		Or
 	N % D = N - (D * floor(N / D))
 """
+print("\nFloor Division (//) operations : ")
+print("10 // 3  : ",10 // 3)
+print("-10 // 3 : ",-10 // 3)
+print("10 // -3 : ",10 // -3)
+print("-10 // -3: ",-10 // -3)
+
+print("3 // 10  : ",3 // 10)
+print("-3 // 10 : ",-3 // 10)
+print("3 // -10 : ",3 // -10)
+print("-3 // -10: ",-3 // -10)
+
 
 print("\nModulus (%) operations : ")
 print("10 % 3  : ",10 % 3)
@@ -26,14 +37,7 @@ print("-3 % 10 : ",-3 % 10)
 print("3 % -10 : ",3 %- 10)
 print("-3 % -10: ",-3 %- 10)
 
-print("\nFloor Division (//) operations : ")
-print("10 // 3  : ",10 // 3)
-print("-10 // 3 : ",-10 // 3)
-print("10 // -3 : ",10 // -3)
-print("-10 // -3: ",-10 // -3)
 
-print("3 // 10  : ",3 // 10)
-print("-3 // 10 : ",-3 // 10)
-print("3 // -10 : ",3 // -10)
-print("-3 // -10: ",-3 // -10)
-
+#precendence checks
+print("3 * 4 % 5 - 6 : ", 3 * 4 % 5 - 6)
+print("3 % 4 * 5 - 6 : ", 3 % 4 * 5 - 6)
