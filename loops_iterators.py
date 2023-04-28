@@ -42,3 +42,6 @@ print('')
 
 #enumerate()
 print(list(enumerate(list_words, 0)))
+
+
+
