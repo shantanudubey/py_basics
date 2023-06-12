@@ -95,7 +95,5 @@ print(str_literals[:2] + str_literals[2:])
 print(str_literals[289:8]+str_literals[2:239])	#graceful handling of out of range index
 print(len(str_literals))
 
-
-
-
+print('I have eaten ' + str(99) + ' burritos.')
 
