@@ -30,7 +30,9 @@ print(formatter.format(formatter, formatter, formatter, formatter))
 print("-" * 79)
 
 for i in range(5):
-	print("count",i,sep = ':', end = ' ')
+	print("count", i, sep=':', end=' ')
+# A new print is needed because changing the "end" from the default(new-line) to space retains that for the next print()
+#resetting the behaviour
 print()
 
 # Print end character mess : 
