@@ -1,16 +1,15 @@
-#control flows
+# Control Flows
 
-x = int(input("Enter a number : "))
-print("You entered : ",x)
+x = int(input("Enter a number :"))
+print("You entered :", x)
 
 if x < 0:
 	x = 0
-	print('Negative value received')
+	print('Negative value received.')
 elif x == 0: 
-	print('Zero value received')
+	print('Zero value received.')
 elif x == 1: 
-	print('One received')
+	print('One received.')
 else :
-	print('XXXXX')
-	
+	print('Value > 1 received.')
 
