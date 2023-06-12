@@ -35,7 +35,7 @@ for i in range(5):
 #resetting the behaviour
 print()
 
-# Print end character mess : 
+# Some weird stuff with print() end character mods: 
 print("testing", end = '\r\n')
 #print("\n\rtest")
 #print('\r')
