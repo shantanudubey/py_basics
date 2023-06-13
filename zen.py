@@ -1,5 +1,4 @@
-"""
-Zen of Python : 
+""" Zen of Python : 
 	Ref : 
 		- https://peps.python.org/pep-0020/
 		- https://github.com/python/peps/blob/main/pep-0020.txt
