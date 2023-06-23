@@ -51,5 +51,15 @@ print("-3 % -10: ",-3 %- 10)
 
 print('-' * 80)
 # Precendence checks
-print("3 * 4 % 5 - 6 : ", 3 * 4 % 5 - 6)
-print("3 % 4 * 5 - 6 : ", 3 % 4 * 5 - 6)
+print("3*4 % 5-6 : ", 3 * 4 % 5 - 6)
+print("3%4 * 5-6 : ", 3 % 4 * 5 - 6)
+print('-' * 80)
+
+# More tests
+print("Test :", 2**6 // 8%2)
+print("Test :", 9**2 // 5-3, 2 % 3)
+print("Test :", 10 + 6 - 2%3 + 7 - 2)
+print("Test :", 5 % 10 + 10 - 23 * 4 // 3)
+print("Test :", 5 + 5 // 5 - 5 * 5**5 % 5)
+print("Test :", 7 % 7 + 7 // 7 - 7 * 7)
+print('-' * 80)

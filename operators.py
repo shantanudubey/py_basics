@@ -1,5 +1,5 @@
 """ Operator Precedence :
-    PEMDAS : Paranthesis Exponentiation Multiplication Division Addition Subtraction
+    PEMDAS : Parenthesis Exponentiation Multiplication Division Addition Subtraction
         - PE (M&D)(A&S)	:	MD and AS are treated as one unit and processed left to right
         - https://www.tutorialspoint.com/python3/python_basic_operators.htm#
         - https://www.w3schools.com/python/python_operators.asp

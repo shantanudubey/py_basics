@@ -13,3 +13,10 @@ print("isinstance   :", isinstance(num_1, int), isinstance(str_1, str))
 num_2 = 220
 print("id           :", id(num_1), id(num_2), num_1 is num_2)
 print('-' * 79)
+
+
+# Swap values of a and b without using a 3rd var or performing any arithmetic
+a = 20
+b = 10
+a, b = b, a
+print("Result   :", a, b)

@@ -36,7 +36,6 @@ str_stmt_2 = str_stmt_2.capitalize();
 #Need to re-assign the statement because strings are pass by value
 str_statement = str_stmt_1 + " " + str_stmt_2
 print("Capitalized :", str_statement)
-
 print('-' * 79)
 
 # Inserting the values into the target_string using placeholders
@@ -55,7 +54,6 @@ target_string = f"I can afford a {car} or a {bike} not exceeding {budget} lakhs.
 print(target_string)
 # Using split()
 print(target_string.split()[9])
-
 print('-' * 79)
 
 # Ref : https://docs.python.org/3.11/tutorial/introduction.html
@@ -86,9 +84,30 @@ print(str_literals[0:3])
 # Default values are 0 for the first index and size of the string for the second index
 print(str_literals[:4], str_literals[2:])
 print(str_literals[-2:], str_literals[:-3])
-# Interesting : The default values make sure that str_literals[:i] + str_literals[i:] is always equal to str_literals:
+# Interesting : The default values make sure that str_literals[:i] + str_literals[i:] is always equal to str_literals
 print(str_literals[:2] + str_literals[2:])
 # Graceful handling of out of range index
-print(str_literals[289:8]+str_literals[2:239])
+print(str_literals[289:8] + str_literals[2:239])
 print(len(str_literals))
 print('I have eaten ' + str(99) + ' burritos.')
+
+# joins each elemnt of the target string with source except last
+str_join = '-'+chr(1)+'-'
+print("join     :", str_join.join(str_literals))
+print('-' * 80)
+
+# Raw string : 
+str_raw = r"This is a 'raw' string. \ and ' don't need to be escaped."
+print("Raw string       :", str_raw)
+print("substring exists :", "raw" in str_raw)
+
+""" - min() : will return the lowest unicode value in the string
+    - max() : will return the highest unicode value in the string 
+    - ord() : returns the unicode value
+    - chr() : returns the character from unicode value
+"""
+str_test = "Delta_Alpha"
+print("built-ins        :", len(str_test), min(str_test), max(str_test))
+print("char values      :", ord('0'), ord('A'), ord('_'), ord('a'), ord('t'))
+print("characters       :", chr(48), chr(65), chr(95), chr(97), chr(116), chr(196), chr(1))
+print('-' * 80)
