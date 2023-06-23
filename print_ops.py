@@ -4,10 +4,9 @@
 print("This is a test line.")
 print("We will reserve ('') for characters and (\"\") for strings.")
 print('Although it\'s not "illegal".')
-
-# Some peculiar operations related to string operations
 print("-" * 79)
 
+# Some peculiar operations related to string operations
 # Formatting
 emp_name = "Python"
 emp_age = 32
@@ -15,7 +14,7 @@ emp_code_of_conduct = "PEP-8"
 print(f"Greetings! This is {emp_name}, your new colleague. He is {emp_age} years old as of 2023 and has vowed to {emp_code_of_conduct}.")
 
 hilarious = False
-joke_evaluation = "Isn't that joke so funny?! {} and {}"
+joke_evaluation = "Isn't that joke so funny? {} and {}"
 print(joke_evaluation.format(hilarious,2))
 
 print("-" * 79)

@@ -16,7 +16,7 @@
 
     Floor Division : 
         N // D = floor(N / D)
-                #Python uses floor() hence the results are accurate even on the negative side of the number scale. JS uses trunc() hence it gives different results for  '//' and also in '%'
+            Python uses floor() hence the results are accurate even on the negative side of the number scale. JS uses trunc() hence it gives different results for  '//' and also in '%'
             Ref : https://www.codingem.com/modulo-in-python/
 
     Modulus :
@@ -24,7 +24,8 @@
             Or
         N % D = N - (D * floor(N / D))
 """
-print("\nFloor Division (//) operations : ")
+print('-' * 80)
+print("Floor Division (//) operations : ")
 print("10 // 3  : ",10 // 3)
 print("-10 // 3 : ",-10 // 3)
 print("10 // -3 : ",10 // -3)
@@ -35,8 +36,9 @@ print("-3 // 10 : ",-3 // 10)
 print("3 // -10 : ",3 // -10)
 print("-3 // -10: ",-3 // -10)
 
+print('-' * 80)
 
-print("\nModulus (%) operations : ")
+print("Modulus (%) operations : ")
 print("10 % 3  : ",10 % 3)
 print("-10 % 3 : ",-10 % 3)
 print("10 % -3 : ",10 % -3)
@@ -47,6 +49,7 @@ print("-3 % 10 : ",-3 % 10)
 print("3 % -10 : ",3 %- 10)
 print("-3 % -10: ",-3 %- 10)
 
-#precendence checks
+print('-' * 80)
+# Precendence checks
 print("3 * 4 % 5 - 6 : ", 3 * 4 % 5 - 6)
 print("3 % 4 * 5 - 6 : ", 3 % 4 * 5 - 6)
