@@ -14,11 +14,11 @@ str_stmt_2 = f"Those who {str_work} and those who {str_no_work}."
 str_statement = str_stmt_1 + " " + str_stmt_2
 print("Original :", str_statement)
 
-""" Multi line comments
-    print(str_statement.lower())
-    print(str_statement.upper())
-    print(str_statement.capitalize())
-    print(str_statement.swapcase())
+""" Multi line comments : 
+        print(str_statement.lower())
+        print(str_statement.upper())
+        print(str_statement.capitalize())
+        print(str_statement.swapcase())
 """
 # Destroying the statement's case
 str_statement = str_statement.swapcase()
@@ -54,29 +54,27 @@ budget = round(budget,2)
 target_string = f"I can afford a {car} or a {bike} not exceeding {budget} lakhs."
 print(target_string)
 # Using split()
-print(target_string.split()[10])
+print(target_string.split()[9])
 
 print('-' * 79)
 
-#Ref :	https://docs.python.org/3.11/tutorial/introduction.html
-multi_string = """
-    This is s multi line string,
+# Ref : https://docs.python.org/3.11/tutorial/introduction.html
+multi_string = """  This is s multi line string,
     To test out the standard behaviour,
     \rand some playing around too.
 """
 print(multi_string)
-
 print('-' * 79)
 
 print("Auto" "-" "Concatenation" " happens" " like" " this" " but" " only" " with" " literals" ".")
 str_literals = "literals"
 str_variables = "variables"
 print("Use '+' for concatenating " + str_literals + " with " + str_variables + " or " + str_variables + " with " + str_variables + '.')
-
 print('-' * 79)
 
 # String indexing/subscripting : there is no 'char', just s string with length 1
 print("String indexing using positive and negative indices : ")
+
 # Positive Indexing : left to right
 print(str_literals[0], str_literals[1], str_literals[2], str_literals[3], str_literals[4], str_literals[5], str_literals[6], str_literals[7])
 # Negative Indexing : right to left -1 being the last, -2 second last and so on
