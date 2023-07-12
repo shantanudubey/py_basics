@@ -1,4 +1,5 @@
-# Reg Ex
+# Regular Expressions
+
 import re
 
 print('-' * 80)
@@ -75,5 +76,19 @@ print('-' * 80)
 print("Group    :", re.search("(fun[cd])", "function"), re.search("(fun[ad])", "function"))
 print("Group    :", re.search("(fun[cd]+)", "function"), re.search("(fun[cd]+)", "funfundtion"))
 print("Group    :", re.search("(fun[c]){1,3}(on)?", "function"))
-
 print('-' * 80)
+
+
+# Exercises : 
+print("rex  :", re.search("\w+", "A"))
+print("rex  :", re.search("\d{2}", "12"))
+print("rex  :", re.search("\w{1,}", "AS"))
+print("rex  :", re.search("\w{2,4}", "ASRDE"))
+print("rex  :", re.search("A*B", "ADRXFGB"))
+print("rex  :", re.search("\d+", "1XA"))
+print('-' * 80)
+
+# Playground : 
+
+
+#print('-' * 80)

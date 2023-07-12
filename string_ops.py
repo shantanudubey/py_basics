@@ -62,6 +62,11 @@ multi_string = """  This is s multi line string,
     \rand some playing around too.
 """
 print(multi_string)
+# A better way to do it
+multi_string = "This is s multi line string, "\
+    "to test out the standard behaviour "\
+    "and some playing around too."
+print(multi_string)
 print('-' * 79)
 
 print("Auto" "-" "Concatenation" " happens" " like" " this" " but" " only" " with" " literals" ".")
@@ -126,4 +131,49 @@ print(msg_03.isalpha(), test_01.isnumeric(), test_01.isalnum(), test_01.isdecima
 print(test_02.isnumeric(), test_02.isalnum(), test_02.isdecimal(), test_02.isascii(), test_02.isdigit() )
 msg_03 = msg_03.replace("st", " se")
 print(msg_03)
+print('-' * 80)
+
+
+# LUP : Exercises
+s = "Bamboozled"
+print(s[0:len(s)-1:2])
+s = "   Bamboo zled    "
+s = s.lstrip()
+s = s.rstrip()
+#s = s.strip()
+s = s.replace(' ', '')
+print(s, len(s))
+
+s = "The Terrible Tiger Tore The Towel."
+print(s)
+pos = s.find('T', 0)
+print(pos, s[pos])
+c = s.count('T')
+s = s.replace('T', 't', c)
+print(s)
+
+s = "Light travels faster than sound. This is why some people appear bright until you hear them speak."
+print(s)
+s = s.replace("Light", "LIGHT", 1)
+s = s.replace("sound", "SOUND", 1)
+print(s)
+
+s = "The difference between stupidity and genius is that genius has its limits."
+print(s)
+res = s.find("genius")
+print(res)
+res = s.split("genius")
+print(res)
+res = s.partition("genius")
+print(res)
+
+""" 0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17
+    K   E   E   P       Y   O   U   R   S   E   L   F       W   A   R   M
+    -18 -17 -16 -15 -14 -13 -12 -11 -10  -9  -8  -7  -6  -5  -4  -3  -2 -1
+"""
+s1 = s2 = s3 = "KEEP YOURSELF WARM"
+print(id(s1) == id(s2) == id(s3))
+print(s1[-0], s1[0], s1[-1], s1[-5])
+print("XXXX : ", s1[1:1])
+print("Negative indices :", s2[0:3], s2[0:-2], s2[-1:3], s2[:-3], s2[-3:], s2[0:-2])
 print('-' * 80)
