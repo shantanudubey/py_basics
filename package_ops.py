@@ -24,7 +24,6 @@ print('-' * 80)
 # Using imported package functions
 result = sqrt(225)
 print("sqrt :", result)
-print("Keywords :\n", keyword.kwlist)
 print('-' * 79)
 
 # Random number between 0 and 100
