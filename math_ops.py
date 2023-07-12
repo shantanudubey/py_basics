@@ -44,7 +44,7 @@ print('-' * 80)
 
 # Some more tests : 
 clx_01 = 2 + 3j
-print("complex  :", clx_01.imag, clx_01.conjugate())
+print("complex  :", clx_01.real, clx_01.imag, clx_01.conjugate())
 print("int      :", int(0b1100001110), str(4.33), 29 // 5, 29 % 5, hex(34567), round(45.6782, 2), math.ceil(3.556), math.ceil(16.7844), 3.45 % 1.22)
 
 print('-' * 80)

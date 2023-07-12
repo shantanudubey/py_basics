@@ -58,3 +58,16 @@ list_num = [1, 2, 3, 4]
 list_2D = [list_char, list_num]
 print(list_2D)
 print(list_2D[0][1])
+
+
+# Higher order functions
+
+""" Ref : https://docs.python.org/3/library/functions.html#filter    
+    filter(function, iterable) is equivalent to the generator expression (item for item in iterable if function(item)) 
+        if function is not None and (item for item in iterable if item) if function is None.    
+"""
+
+list_demo_01 = [1,2,3,4,5,6,7,8,9]
+list_demo_02 = [2, 4, 6, 8, 10]
+
+

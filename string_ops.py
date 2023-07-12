@@ -94,6 +94,8 @@ print('I have eaten ' + str(99) + ' burritos.')
 # joins each elemnt of the target string with source except last
 str_join = '-'+chr(1)+'-'
 print("join     :", str_join.join(str_literals))
+print("chr      :", str_join[1])
+print("ord      :", ord(str_join[1]))
 print('-' * 80)
 
 # Raw string : 
@@ -110,4 +112,18 @@ str_test = "Delta_Alpha"
 print("built-ins        :", len(str_test), min(str_test), max(str_test))
 print("char values      :", ord('0'), ord('A'), ord('_'), ord('a'), ord('t'))
 print("characters       :", chr(48), chr(65), chr(95), chr(97), chr(116), chr(196), chr(1))
+print('-' * 80)
+
+msg_01 = "first"
+msg_02 = "second"
+msg_03 = "first"
+test_01 = "451"
+test_02 = "45.5"
+print(msg_01 + msg_02, msg_01, msg_02)
+print("rst" in msg_02, "rst" in msg_01)
+print(id(msg_01) == id(msg_03))
+print(msg_03.isalpha(), test_01.isnumeric(), test_01.isalnum(), test_01.isdecimal(), test_01.isascii(), test_01.isdigit() )
+print(test_02.isnumeric(), test_02.isalnum(), test_02.isdecimal(), test_02.isascii(), test_02.isdigit() )
+msg_03 = msg_03.replace("st", " se")
+print(msg_03)
 print('-' * 80)
