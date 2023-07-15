@@ -26,8 +26,7 @@ for user, status in users.items():
 
 print("Active users	:	", active_list)
 print("Inactive users	:	", inactive_list)
-print("")
-
+print('-' * 80)
 # Range from 5 to 100 in steps of 10
 for i in range(5, 100, 10):	
 	print(i, end = " ")
@@ -39,8 +38,16 @@ print("Sum of 0 + 1 + 2 + 3 = ", sum(range(4)))
 for i in range(len(list_words)):
 	print(i, list_words[i])
 print('')
+print('-' * 80)
 
-print(list(enumerate(list_words, 0)))
+# Use enumerate() instead of range() : to get both index and element instead
+for i, elem in enumerate(list_words):
+	print(i, elem)
+	
+print('-' * 80)
 
 
 
+
+
+print('-' * 80)

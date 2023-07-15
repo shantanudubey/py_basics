@@ -89,6 +89,8 @@ print("rex  :", re.search("\d+", "1XA"))
 print('-' * 80)
 
 # Playground : 
+print("rex  :", re.search("\d+", "1XA"))
+
 
 
 #print('-' * 80)
