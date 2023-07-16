@@ -104,5 +104,4 @@ z = i and j or k
 print("Exercises	:", w, x, y, z)
 print("Exercises	:", 30 or 40 or 60 and 0)
 
-
 print('-' * 80)

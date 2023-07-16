@@ -84,7 +84,7 @@ print("rex  :", re.search("\w+", "A"))
 print("rex  :", re.search("\d{2}", "12"))
 print("rex  :", re.search("\w{1,}", "AS"))
 print("rex  :", re.search("\w{2,4}", "ASRDE"))
-print("rex  :", re.search("A*B", "ADRXFGB"))
+print("rex  :", re.search("A*B", "ADRXFGBRT"))
 print("rex  :", re.search("\d+", "1XA"))
 print('-' * 80)
 

@@ -37,3 +37,17 @@ print("3 + 2 < 5 - 7            :   ", 3 + 2 < 5 - 7)
 print("3 + 2                    :   ", (3 + 2))
 print("5 - 7                    :   ", (5 - 7))
 print('-' * 79)
+
+
+# Identity Operator : 
+# For Basic types : 
+a = 10
+b = 10
+c = a
+print("identity :", a == b, a is b, a == c, a is c, id(a), id(b), id(c))
+
+# For Container types : 
+a = [10, 20, 30, 40, 50]
+b = [10, 20, 30, 40, 50]
+c = a
+print("identity :", a == b, a is b, a == c, a is c, id(a), id(b), id(c))
