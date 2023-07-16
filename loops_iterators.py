@@ -45,9 +45,3 @@ for i, elem in enumerate(list_words):
 	print(i, elem)
 	
 print('-' * 80)
-
-
-
-
-
-print('-' * 80)
