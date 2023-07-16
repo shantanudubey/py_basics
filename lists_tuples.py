@@ -197,7 +197,4 @@ print("unpack    :", x, y, _)
 i, *_, j = tpl_01
 print("unpack    :", i, j, _)
 
-
-
-
 print('-'*79)
