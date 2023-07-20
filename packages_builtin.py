@@ -6,19 +6,20 @@ from math import trunc
 import random
 
 
-print("Package : sys")
-print("version :", sys.version)
+print("Package  : sys")
+print("version  :", sys.version)
 print("platform :", sys.platform)
-print("prefix :", sys.prefix)
-print("stdout :", sys.stdout)
-print("stderr :", sys.stderr)
-print("argv :", sys.argv)
-print("flags :", sys.flags)
+print("prefix   :", sys.prefix)
+print("stdout   :", sys.stdout)
+print("stderr   :", sys.stderr)
+print("argv     :", sys.argv)
+print("flags    :", sys.flags)
+print("path     :", sys.path)
 print('-' * 80)
 
-print("Package : keyword")
-print("kwlist", keyword.kwlist)
-print("softkwlist", keyword.softkwlist)
+print("Package      : keyword")
+print("kwlist       :", keyword.kwlist)
+print("softkwlist   :", keyword.softkwlist)
 print('-' * 80)
 
 # Using imported package functions
