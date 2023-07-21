@@ -1,8 +1,6 @@
 import sys
 import keyword
-# Only import/load sqrt() from the math lib
-from math import sqrt
-from math import trunc
+import math
 import random
 
 
@@ -23,14 +21,31 @@ print("softkwlist   :", keyword.softkwlist)
 print('-' * 80)
 
 # Using imported package functions
-result = sqrt(225)
+result = math.sqrt(225)
 print("sqrt :", result)
 print('-' * 79)
 
 # Random number between 0 and 100
-print("random  :", trunc(random.random() * 100))
+print("random  :", math.trunc(random.random() * 100))
 print('-' * 79)
 
 # Check all available functions in the package : random
 print(dir(random))
+print('-' * 79)
+
+# Some built-in functions
+print("abs      :", abs(-123.45))
+print("pow      :", pow(3,2))
+print("min      :", min(-123.45, 1, 12, -100))
+print("max      :", max(-123.45, 1, 12, -100))
+print("round    :", round(-123.45))
+print("divmod   :", divmod(10, 3))
+print('-' * 79)
+
+# Check all available built-in functions
+print(dir(__builtins__))
+print('-' * 79)
+
+# Check all available functions in the package : math
+print(dir(math))
 print('-' * 79)

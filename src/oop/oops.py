@@ -9,6 +9,7 @@ class Employee:
         self.__name = name
         self.__age = age
         self.__salary = salary
+        self.temp_flag = True
         Employee.count += 1
         print("Employee : initalized:", self.__name)
 
@@ -73,8 +74,6 @@ e1.display_data()
 #   the instance get implicitely passed to a class method
 Employee.display_count()
 print('-'*79)
-
-
 
 
 print('-'*79)
