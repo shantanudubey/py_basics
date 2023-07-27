@@ -1,4 +1,4 @@
-# Classes, Objects and Memory Addresses : 
+# Objects and Memory Addresses
 
 
 # Objects don't have names hence are referenced by their memory addresses
