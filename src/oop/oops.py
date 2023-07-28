@@ -65,7 +65,7 @@ print("class vars() :", vars(Employee))
 print("class dir()  :", dir(Employee))
 print('-'*79)
 
-# In itialize the object again as the previous one would've been deleted
+# Initialize the object again as the previous one would've been deleted
 e1 = Employee("Yash", 32, 61593)
 print("obj vars()   :", vars(e1))
 print("obj dir()    :", dir(e1))
