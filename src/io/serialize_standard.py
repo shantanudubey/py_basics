@@ -1,8 +1,14 @@
 # File : Serializing/Deserializing data using JSON
 
 import json
+import os
 
 
+print('-'*79)
+FOLDER_NAME = "test_folder"
+# change working dir to test_folder
+print("File :", os.chdir(FOLDER_NAME))
+print("File :", os.getcwd())
 FILE_NAME = "test_serializations"
 
 # tuples are serialized as lists but can be converted to a tuple

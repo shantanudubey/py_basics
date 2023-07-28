@@ -1,6 +1,13 @@
 import json
+import os
 
 print('-'*79)
+FOLDER_NAME = "test_folder"
+DATA_FILE_NAME = "custom_data"
+# change working dir to test_folder
+print("File :", os.chdir(FOLDER_NAME))
+print("File :", os.getcwd())
+
 # Serializing/Deserializing user-defined types
 # We create a new type called "Complex"
 print("Serializing User Defined objects.")
@@ -27,7 +34,7 @@ def decode_complex(dct):
 c = Complex(1.0, 2.0)
 c.print_data()
 
-with open("data", "w+") as f:
+with open(DATA_FILE_NAME, "w+") as f:
     json.dump(c, f, default=encode_complex)
     f.seek(0)
     inc = json.load(f, object_hook=decode_complex)

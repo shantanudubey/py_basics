@@ -2,12 +2,15 @@
 import os
 
 FILE_NAME = "test_file_io.txt"
+FOLDER_NAME = "test_folder"
 
 print('-'*79)
+# change working dir to test_folder
+print("File :", os.chdir(FOLDER_NAME))
 print("File :", os.getcwd())
 print("File :", os.getcwdb())
-
 print('-'*79)
+
 # Write to file
 msg_01 = "Pay taxes with a smile...\n"
 msg_02 = "I tried but they wanted money...\n"
