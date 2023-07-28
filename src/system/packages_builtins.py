@@ -2,6 +2,7 @@ import sys
 import keyword
 import math
 import random
+import os
 
 
 print("Package  : sys")
@@ -48,4 +49,14 @@ print('-' * 79)
 
 # Check all available functions in the package : math
 print(dir(math))
+#print(vars(math))  # Disabled to avoid large output
+print('-' * 79)
+
+# OS
+print("OS   :", os.getcwd())
+print("OS   :", os.getcwdb)
+print("OS   :", os.getlogin())
+print("OS   :", os.cpu_count())
+print("OS   :", os.getenv("PATH"))
+
 print('-' * 79)

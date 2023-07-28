@@ -1,0 +1,11 @@
+Bad offcials are elected by good citizens who do not vote.
+Humpty
+Dumpty
+Sat
+On
+a
+Wall
+[11, 22, 33, 44, 55, 66]
+('Yash', 24, 22000)
+{'name': 'Dilip', 'age': 34, 'salary': 41000}
+99999999
