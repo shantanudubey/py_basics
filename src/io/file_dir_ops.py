@@ -74,7 +74,3 @@ print("Modified :", time.ctime(modified_at))
 print("Accessed :", time.ctime(accessed_at))
 
 print('-'*79)
-
-
-
-print('-'*79)
