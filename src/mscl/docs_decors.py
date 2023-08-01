@@ -1,4 +1,6 @@
 # Documentation Strings and Decorators
+import time
+
 
 print('-'*79)
 
@@ -30,7 +32,7 @@ print('-'*79)
 
 
 # Decorators : decorate/add functionality to an existing function
-def my_decorator(func):
+def decor_spl(func):
     def wrapper():
         print('*'*79)        
         func()
@@ -44,13 +46,13 @@ def display():
 def show():
     print("Nothing great, me too.")
 
-display = my_decorator(display)
+display = decor_spl(display)
 display()
-show = my_decorator(show)
+show = decor_spl(show)
 show()
 
 # The above is confusing so we can use decorator-tags for the same
-def separate_decorator(func):
+def decor_sim(func):
     def wrapper():
         print('-'*79)        
         func()
@@ -58,11 +60,11 @@ def separate_decorator(func):
         
     return wrapper
 
-@separate_decorator
+@decor_sim
 def display():
     print("I stand decorated.")
 
-@separate_decorator
+@decor_sim
 def show():
     print("Nothing great, me too.")
 
@@ -71,8 +73,50 @@ display()
 show()
 
 
+# Decorators with arguments : 
+def timer(func):
+    def calculate(*args, **kwargs):
+        start_time = time.perf_counter()
+        value = func(*args, **kwargs)
+        end_time = time.perf_counter()
+        runtime = end_time - start_time
+        print(f"Finished {func.__name__!r} in {runtime:8f} seconds.")
+        return value
+    return calculate
+
+@timer
+def product(num):
+    fact = 1
+    for i in range(num):
+        fact = fact * i + 1
+    return fact
+
+@timer
+def product_sum(num):
+    p = 1
+    for i in range(num):
+        p = p * i + 1
+    
+    s = 0
+    for i in range(num):
+        s = s + i + 1
+
+    return (p, s)
+
+@timer
+def time_pass(num):
+    for i in range(num):
+        i += 1
 
 
-
+p = product(10)
+print("product  :", p)
+p = product(20)
+print("product  :", p)
+fs = product_sum(10)
+print("prod-sum :", fs)
+fs = product_sum(20)
+print("prod-sum :", fs)
+time_pass(20)
 
 print('-'*79)
