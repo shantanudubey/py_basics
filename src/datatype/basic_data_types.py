@@ -1,5 +1,5 @@
 # Basic data types : int, float, string, bool, byte, complex
-
+import sys
 
 """ int : 
         - decimal
@@ -45,8 +45,18 @@ print('-' * 80)
 
 # Check type : 
 print("type()           :", type(num_01), type(bin_01), type(oct_01), type(hex_01), type(float_01), type(bool_01), type(str_01), type(complex_01), type(byte_01))
-print('-' * 80)
 
 print("Types can be converted the in-built conversion function for each type :", 
       str(345.345), bool(0), bool(345), bool(-23), int(345.345), float("345"), complex(3,2.6), bytes(2))
+print('-' * 80)
+
+
+# Unicode : 
+#     - UTF=8 is the encoding stndard Python uses.
+#     - Every character is assigned an integer value called code-point
+#     - UTF-8 uses a variable number of bytes for each code-point.
+print("Unicode    : default encoding is :", sys.stdin.encoding)
+print("Unicode    :", chr(0x0901), chr(0x0902), chr(0x0903), chr(0x0904),
+       chr(0x0905), chr(0x0906), chr(0x0907), chr(0x0908), chr(0x0909), chr(0x0910))
+
 print('-' * 80)
