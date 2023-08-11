@@ -5,7 +5,7 @@
         - Builtin
         - Third Party
         - Local Application    
-    PEP 8 explicitly recommends absolute imports.
+    PEP-8 explicitly recommends absolute imports.
     
     *We cannot import packages/modules from the parent level or above it.
     
