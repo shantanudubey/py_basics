@@ -9,6 +9,8 @@
     
     *We cannot import packages/modules from the parent level or above it.
     
+    - __init.py file is used to tell python to treat the folder as a package
+    
     Ref : 
         - https://realpython.com/absolute-vs-relative-python-imports/        
         - https://stackoverflow.com/questions/24868733/how-to-access-a-module-from-outside-your-file-folder-in-python        
