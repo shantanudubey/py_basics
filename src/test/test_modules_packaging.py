@@ -74,6 +74,6 @@ mf2.funf2()
 print('-'*79)
 
 lt.show_message()
-lt.test_lib_util()
+print(lt.test_lib_util())
 
 print('-'*79)

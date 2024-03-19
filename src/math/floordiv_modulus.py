@@ -5,10 +5,11 @@
 
         In Python, a common way to calculate modulo is using the dedicated modulo operator %.
         Alternatively, if you want to know both the result of the division and the remainder, you can use the built-in divmod() function.
-        When doing modular arithmetic with floats, use the math module’s fmod() function.
+        When doing modular arithmetic with floats, use the math module's fmod() function.
         Modulos also work for negative numbers in Python. However, the way negative modulos are calculated can differ from language to language.
 
-        There are many use cases for modulo in Python. For example, to figure out if a number is odd or even, you need to use modulo. Another common use case for modulo is to check if a number is a prime number.
+        There are many use cases for modulo in Python. For example, to figure out if a number is odd or even, you need to use modulo.
+        Another common use case for modulo is to check if a number is a prime number.
 """
 
 """ Division : 
@@ -16,7 +17,8 @@
 
     Floor Division : 
         N // D = floor(N / D)
-            Python uses floor() hence the results are accurate even on the negative side of the number scale. JS uses trunc() hence it gives different results for  '//' and also in '%'
+            Python uses floor() hence the results are accurate even on the negative side of the number scale.
+            JS uses trunc() hence it gives different results for  '//' and also in '%'
             Ref : https://www.codingem.com/modulo-in-python/
 
     Modulus :

@@ -8,7 +8,7 @@ help(print)
 print('-' * 79)
 
 print('-' * 79)
-# Run this file byt moving into this folder and typing :
+# Run this file by moving into this folder and typing :
 #   command : python .\cmds.py Hello Python 3.11
 #   output  : Commandline info >> argv:  ['.\\cmds.py', 'Hello', 'Python', '3.11']
 
