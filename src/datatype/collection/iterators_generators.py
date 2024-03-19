@@ -75,7 +75,7 @@ def gen_avg(data):
 lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 gr = gen_avg(lst)
 print("genr :", gr, *gr)
-# Since the generator has been unpakced, the pointer is at the last element,
+# Since the generator has been unpacked, the pointer is at the last element,
 #   next() will raise an Exception. We need to call re-generate
 #   If we didn't unpack then the re-generation wasn't needed.
 gr = gen_avg(lst)
